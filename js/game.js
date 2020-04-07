@@ -47,7 +47,7 @@ const draw = function() {
         ctx.drawImage(pipeBottom, pipe[i].x, pipe[i].y + pipeUp.height + gap);
         pipe[i].x--;
 
-        if(pipe[i].x == 120) {
+        if(pipe[i].x == 250) {
             pipe.push({
                 x : cvs.width,
                 y : Math.floor(Math.random() * pipeUp.height) - pipeUp.height
