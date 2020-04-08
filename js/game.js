@@ -47,11 +47,21 @@ const draw = function() {
         ctx.drawImage(pipeBottom, pipe[i].x, pipe[i].y + pipeUp.height + gap);
         pipe[i].x--;
 
-        if(pipe[i].x == 250) {
-            pipe.push({
-                x : cvs.width,
-                y : Math.floor(Math.random() * pipeUp.height) - pipeUp.height
-            });
+
+        if(score < 15) {
+            if(pipe[i].x == 200) {
+                pipe.push({
+                    x : cvs.width,
+                    y : Math.floor(Math.random() * pipeUp.height) - pipeUp.height
+                });
+            } 
+        } else if(score >= 15) {
+            if(pipe[i].x == 300) {
+                pipe.push({
+                    x : cvs.width,
+                    y : Math.floor(Math.random() * pipeUp.height) - pipeUp.height
+                });
+            } 
         }
 
         if(xPos + bird.width >= pipe[i].x 
