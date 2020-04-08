@@ -69,10 +69,12 @@ const draw = function() {
         && (yPos <= pipe[i].y + pipeUp.height 
         || yPos + bird.height >= pipe[i].y + pipeUp.height + gap)) {
             location.reload();
+            alert('Вы проиграли, ваш счет: ' + score);
         }
         
         if(yPos == 405) {
             location.reload();
+            alert('Вы проиграли, ваш счет: ' + score);
         }
 
         if(pipe[i].x === 5) {
