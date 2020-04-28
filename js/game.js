@@ -19,7 +19,7 @@ const scoreAudio = new Audio();
 
 scoreAudio.src = "audio/score.mp3";
 
-const gap = 140;
+const gap = 50;
 
 // onclick
 document.addEventListener("click", () => {
@@ -37,7 +37,7 @@ let score = 0;
 // position
 let xPos = 40;
 let yPos = 150;
-const grav = 2;
+const grav = 1;
 
 const draw = function() {
     ctx.drawImage(bg, 0, 0);
