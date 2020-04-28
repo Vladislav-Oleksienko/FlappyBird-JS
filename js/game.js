@@ -35,9 +35,9 @@ pipe[0] = {
 
 let score = 0;
 // position
-let xPos = 30;
+let xPos = 40;
 let yPos = 150;
-const grav = 1;
+const grav = 2;
 
 const draw = function() {
     ctx.drawImage(bg, 0, 0);
@@ -95,3 +95,4 @@ const draw = function() {
 }
 
 pipeBottom.onload = draw;
+
