@@ -19,7 +19,7 @@ const scoreAudio = new Audio();
 
 scoreAudio.src = "audio/score.mp3";
 
-const gap = 50;
+const gap = 140;
 
 // onclick
 document.addEventListener("click", () => {
